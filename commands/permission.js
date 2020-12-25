@@ -8,6 +8,7 @@ module.exports = {
         if (args.length === 3) {
             console.log(args)
 
+            //https://discordjs.guide/popular-topics/faq.html#how-do-i-check-if-a-guild-member-has-a-certain-role
             let rolemap = message.guild.roles.cache
                 .sort((a, b) => b.position - a.position)
                 .map(r => r)
