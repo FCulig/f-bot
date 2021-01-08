@@ -1,0 +1,64 @@
+{
+    "general": {
+        "image": "https://i.imgur.com/wSTFkRM.png",
+        "color": "#0099ff",
+        "title": "F-Bot commands",
+        "author": "F-Bot",
+        "description": "List of all commands. To se usage of certain command, use !help <command-name>. If you want to see recommended bot setup use !help setup.",
+        "fields": [
+            {
+                "name": "!permission",
+                "value": "Setup permissions for F-Bot commands (ex. who can use !help)."
+            }
+        ],
+        "footer": "Thank you for using F-Bot"
+    },
+    "setup": {
+        "image": "https://i.imgur.com/wSTFkRM.png",
+        "color": "#0099ff",
+        "title": "F-Bot recommended setup",
+        "author": "F-Bot",
+        "description": "This is tutorial on setting up your bot.",
+        "fields": [
+            {
+                "name": "Prerequesits",
+                "value": "Knowledge of all commands that bot supports (To see all commands type !help)."
+            },
+            {
+                "name": "Setting up permissions",
+                "value": "By default bot comes with no restrictions on commands. To ensure not all server members can alter setting, we recommend to setup permissions for each command. To setup permissions use !permission command. For more details use !help permission."
+            }
+        ],
+        "footer": "Thank you for using F-Bot"
+    },
+    "permission": {
+        "image": "https://i.imgur.com/wSTFkRM.png",
+        "color": "#0099ff",
+        "title": "More details on permission command",
+        "author": "F-Bot",
+        "description": "This command allows you to declare which roles can invoke certain commands.",
+        "fields": [
+            {
+                "name": "Syntax",
+                "value": "!permission <add/remove> <action> <command-name> <role-that-can-execute>"
+            },
+            {
+                "name": "<add/remove>",
+                "value": "```add``` - assign permission \n```remove``` - delete permission"
+            },
+            {
+                "name": "<action>",
+                "value": "```invoke-command``` - used to set who can invoke a command"
+            },
+            {
+                "name": "<command-name>",
+                "value": "Command to which permission is assigned. To se full list of commands type !help."
+            },
+            {
+                "name": "<role-that-can-execute>",
+                "value": "Tag of role. Users with this role can execute a permission."
+            }
+        ],
+        "footer": "Thank you for using F-Bot"
+    }
+}
