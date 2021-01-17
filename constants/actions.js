@@ -1,3 +1,6 @@
 module.exports = {
-    actions: ["invoke-command"]
+    actions: {
+        permissions: ["invoke-command"],
+        configure: ["youtubers-channel", "youtube-videos"]
+    }
 }

@@ -13,7 +13,6 @@ module.exports = {
 
 function execute(message, args) {
     if (args.length === 4) {
-        // !permission invoke-command permission @Admin
         if (validArguments(args)) {
             if (args[0] == 'add') {
                 permissionDAO.insertPermission(message.channel.guild.id, args[1], args[2], args[3], message);
@@ -31,7 +30,7 @@ function execute(message, args) {
 
 function validArguments(args) {
     if (args[0] != 'add' && args[0] != 'remove') return false;
-    if (!actions.includes(args[1])) return false;
+    if (!actions.permissions.includes(args[1])) return false;
     if (!commandUtil.getCommandNames().includes(args[2])) return false;
     if (!/^<@&.*>$/.test(args[3])) return false;
 

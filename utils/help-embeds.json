@@ -9,6 +9,10 @@
             {
                 "name": "!permission",
                 "value": "Setup permissions for F-Bot commands (ex. who can use !help)."
+            },
+            {
+                "name": "!configure",
+                "value": "Configure F-bot (ex. dedicate channel for youtubers)."
             }
         ],
         "footer": "Thank you for using F-Bot"
